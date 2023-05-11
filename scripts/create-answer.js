@@ -47,6 +47,7 @@ async function createAnswer (question) {
       vector,
     },
   })
+  console.log('[pinecone.query]', matches)
 
   let prompt = `Beantworte die Frage mit dem folgenden Kontext aus Video-Transkripten.
 

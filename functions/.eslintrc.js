@@ -26,6 +26,7 @@ module.exports = {
     'object-curly-spacing': ['warn', 'always'],
     'max-len': 'off',
     'new-cap': 'off',
+    'curly': 'off',
   },
   overrides: [
     {

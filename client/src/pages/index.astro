@@ -1,0 +1,24 @@
+---
+import Layout from '../layouts/Layout.astro'
+import Chat from '../components/Chat.vue'
+---
+
+<Layout>
+  <main class="bg-gradient-to-br from-indigo-800 to-purple-900 text-white min-h-screen">
+    <div class="container max-w-2xl mx-auto py-24">
+      <header class="text-center mb-12">
+        <img
+          src="/joelbot-icon-2.jpg"
+          alt="JoelBot Icon"
+          class="inline rounded-full w-32 mb-2"
+        >
+        <h1 class="font-semibold text-3xl">
+          JoelBot
+        </h1>
+      </header>
+      <div>
+        <Chat client:load />
+      </div>
+    </div>
+  </main>
+</Layout>

@@ -59,6 +59,7 @@ module.exports = class AiService {
         vector,
       },
     })
+    logger.log('[pinecone.query]', matches)
 
     const prompt = `Beantworte die Frage mit dem folgenden Kontext aus Video-Transkripten.
 
@@ -89,6 +90,10 @@ Antwort:`
     }
 
     logger.log('[output]', answer)
-    return answer
+
+    return {
+      message: answer,
+      vectors: matches,
+    }
   }
 }
