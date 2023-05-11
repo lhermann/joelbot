@@ -19,6 +19,7 @@ const pineconePromise = pinecone.init({
 // createAnswer('Was ist denn der Frühregen von dem im Buch Joel gesprochen wird?')
 createAnswer('Was ist denn der Spätregen von dem im Buch Joel gesprochen wird?')
 // createAnswer('Sag mir welche Botschaft am wichtigsten ist?')
+// createAnswer('Was bedeuten die Übriggebliebenen?')
 // createAnswer('Was ist am 11. September 2001 passiert?')
 async function createAnswer (question) {
   await pineconePromise
